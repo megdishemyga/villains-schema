@@ -1,16 +1,18 @@
 {
-  "namespace": "com.gotham.v2",
+  "namespace": "com.gotham",
   "type": "record",
   "name": "VillainEvent",
   "version": "2.0.0",
   "fields": [
     {
       "name": "nickname",
-      "type": "string"
+      "type": "string",
+      "doc": "the villain nick name"
     },
     {
       "name": "fullName",
-      "type": "string"
+      "type": "string",
+      "doc": "The villain full name"
     },
     {
       "name": "age",
