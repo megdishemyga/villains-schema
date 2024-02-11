@@ -47,7 +47,8 @@
                         </goals>
                         <configuration>
                             <sourceDirectory>${project.basedir}/src/main/resources/avro</sourceDirectory>
-                            <outputDirectory>${project.build.directory}/generated-sources/src/main/java</outputDirectory>
+                            <outputDirectory>${project.build.directory}/generated-sources/src/main/java
+                            </outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -64,12 +65,10 @@
                         <param>http://localhost:8081</param>
                     </schemaRegistryUrls>
                     <subjects>
-                        <villain-v1>src/main/resources/avro/villain-event-v1.avsc</villain-v1>
-                        <villain-v2>src/main/resources/avro/villain-event-v2.avsc</villain-v2>
+                        <villain>src/main/resources/avro/villain-event.avsc</villain>
                     </subjects>
                     <compatibilityLevels>
-                    <villain-v1>BACKWARD</villain-v1>
-                        <villain-v2>FORWARD</villain-v2>
+                        <villain>BACKWARD</villain>
                     </compatibilityLevels>
                     <messagePath/>
                     <outputDirectory/>
